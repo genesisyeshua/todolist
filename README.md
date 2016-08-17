@@ -71,7 +71,7 @@ e. install extensions by typing the following in cmd:<br/>
 <li>flask\Scripts\pip install guess_language</li>
 <li>flask\Scripts\pip install flipflop</li>
 <li>flask\Scripts\pip install coverage</li>
-</ul
+</ul>
 
 #####4.Mongodb version 3.0 or v.3.2
 Refer to the online documentation for the installation of mongodb to the link https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/

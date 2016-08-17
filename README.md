@@ -89,8 +89,8 @@ Refer to the online documentation for the installation of mongodb to the link ht
 ####Development
 
 ####Contributors
-* Caburnay, John david [jdcaburnay (git) , @johnca (slack)]- specific tasks includes
-* Gonzales, Michael [ikels24 (git) , @michaelgo (slack)] - specific tasks includes
+* Caburnay, John david [jdcaburnay (git) , @johnca (slack)]- specific task includes developing and refining GUI
+* Gonzales, Michael [ikels24 (git) , @michaelgo (slack)] - 
 * Galinato, Julie Anne [julieannegalinato (git) , @julieannemg (slack) -
-* Lim, Genesis [genesisyeshua (git) , @genesisl (slack)] - 
+* Lim, Genesis [genesisyeshua (git) , @genesisl (slack)] - specific task include developing and refining GUI
 * Manalili, Daniel James [dmanalili9123 (git) , @danielma (slack)] - 

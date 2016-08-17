@@ -1022,7 +1022,7 @@ $(function () {
     };
     $.fn.lobiList.DEFAULT_OPTIONS = {
         // Available style for lists
-        'listStyles': ['lobilist-default', 'lobilist-danger', 'lobilist-success', 'lobilist-warning', 'lobilist-info', 'lobilist-primary'],
+        'listStyles': ['lobilist-danger', 'lobilist-success', 'lobilist-warning', 'lobilist-info', 'lobilist-primary'],
         // Default options for all lists
         listsOptions: {
             id: false,
@@ -1057,7 +1057,7 @@ $(function () {
         // Default action buttons for all lists
         controls: ['edit', 'add', 'remove', 'styleChange'],
         //List style
-        defaultStyle: 'lobilist-default',
+        // defaultStyle: 'lobilist-default',
         // Whether to show lists on single line or not
         onSingleLine: true,
 

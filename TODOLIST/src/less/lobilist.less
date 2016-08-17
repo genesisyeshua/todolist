@@ -28,9 +28,7 @@
                 opacity: 1;
             }
         }
-        &.lobilist-default {
-            .lobilist-variant(@lobilist-default-header-bg, @lobilist-default-title-color);
-        }
+        
 
         &.lobilist-danger {
             .lobilist-variant(@lobilist-danger-header-bg, @lobilist-danger-title-color);
@@ -92,7 +90,6 @@
             min-width: 0;
             padding: 0;
             margin: 0;
-            .lobilist-default,
             .lobilist-danger,
             .lobilist-success,
             .lobilist-warning,
@@ -104,12 +101,7 @@
                 .square(@lobilist-actions-list-style-picker-item-size);
 
             }
-            .lobilist-default {
-                background-color: @lobilist-default-header-bg;
-                &:hover {
-                    background-color: darken(@lobilist-default-header-bg, 5%);
-                }
-            }
+           
             .lobilist-danger {
                 background-color: @lobilist-danger-header-bg;
                 &:hover {

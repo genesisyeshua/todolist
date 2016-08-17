@@ -1,10 +1,11 @@
 .lobilists .lobilist-wrapper,
 .lobilists .lobilist-placeholder {
- /* display: inline-block;*/
-  /*float: right;*/
+  display: inline-block;
+  float: left;
   border: 1px solid transparent;
-  margin-bottom: auto;
+  margin-bottom: 16px;
   width: 360px;
+  margin-right: 16px;
 }
 .lobilists .lobilist {
   max-height: 100%;
@@ -25,32 +26,32 @@
 .lobilists .lobilist:hover .lobilist-actions {
   opacity: 1;
 }
-.lobilists /*.lobilist.lobilist-default*/ {
+.lobilists .lobilist.lobilist-default {
   border: 1px solid #dddddd;
 }
-.lobilists /*.lobilist.lobilist-default*/ .lobilist-header {
+.lobilists .lobilist.lobilist-default .lobilist-header {
   border-bottom: 1px solid #dddddd;
   background-color: #eeeeee;
 }
-.lobilists /*.lobilist.lobilist-default*/ .lobilist-header input {
+.lobilists .lobilist.lobilist-default .lobilist-header input {
   background-color: transparent;
   border-color: #555555;
   color: #555555;
 }
-.lobilists /*.lobilist.lobilist-default*/ .lobilist-title {
+.lobilists .lobilist.lobilist-default .lobilist-title {
   color: #555555;
 }
-.lobilists /*.lobilist.lobilist-default*/ .lobilist-actions .btn {
+.lobilists .lobilist.lobilist-default .lobilist-actions .btn {
   color: #555555;
 }
-.lobilists /*.lobilist.lobilist-default .btn-show-form {
-  color: #555555;*/
+.lobilists .lobilist.lobilist-default .btn-show-form {
+  color: #555555;
 }
-.lobilists /*.lobilist.lobilist-default*/ .lobilist-form-footer {
+.lobilists .lobilist.lobilist-default .lobilist-form-footer {
   border-top: 1px solid #dddddd;
   background-color: #eeeeee;
 }
-.lobilists /*.lobilist.lobilist-default*/ .lobilist-footer {
+.lobilists .lobilist.lobilist-default .lobilist-footer {
   border-top: 1px solid #dddddd;
   background-color: #eeeeee;
 }
@@ -251,7 +252,7 @@
   padding: 0;
   margin: 0;
 }
-.lobilists .lobilist-actions .dropdown-menu,
+.lobilists .lobilist-actions .dropdown-menu .lobilist-default,
 .lobilists .lobilist-actions .dropdown-menu .lobilist-danger,
 .lobilists .lobilist-actions .dropdown-menu .lobilist-success,
 .lobilists .lobilist-actions .dropdown-menu .lobilist-warning,
@@ -263,10 +264,10 @@
   width: 25px;
   height: 25px;
 }
-.lobilists .lobilist-actions .dropdown-menu {
+.lobilists .lobilist-actions .dropdown-menu .lobilist-default {
   background-color: #eeeeee;
 }
-.lobilists .lobilist-actions .dropdown-menu:hover {
+.lobilists .lobilist-actions .dropdown-menu .lobilist-default:hover {
   background-color: #e2e2e2;
 }
 .lobilists .lobilist-actions .dropdown-menu .lobilist-danger {
@@ -439,7 +440,7 @@
 }
 .lobilists.single-line .lobilist-wrapper,
 .lobilists.single-line .lobilist-placeholder {
-  float: right;
+  float: none;
   white-space: normal;
   vertical-align: top;
   height: 100%;

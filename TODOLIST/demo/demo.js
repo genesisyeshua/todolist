@@ -35,8 +35,46 @@ $(function () {
                         dueDate: '2015-02-02'
                     }
                 ]
-            },         
+            },
+            {
+                title: 'DOING',
+                items: [
+                    {
+                        title: 'Composed trays',
+                        description: 'Hoary rattle exulting suspendisse elit paradises craft wistful. Bayonets allures prefer traits wrongs flushed. Tent wily matched bold polite slab coinage celerities gales beams.'
+                    },
+                    {
+                        title: 'Chic leafy'
+                    },
+                    {
+                        title: 'Guessed interdum armies chirp writhes most',
+                        description: 'Came champlain live leopards twilight whenever warm read wish squirrel rock.',
+                        dueDate: '2015-02-04',
+                        done: true
+                    }
+                ]
+            }
         ]
+    });
+    //Custom datepicker
+    $('#todo-lists-demo-datepicker').lobiList({
+        lists: [
+            {
+                title: 'TODO',
+                defaultStyle: 'lobilist-info',
+                items: [
+                    {
+                        title: 'Floor cool cinders',
+                        description: 'Thunder fulfilled travellers folly, wading, lake.',
+                        dueDate: '2015-01-31'
+                    }
+                ]
+            }
+        ],
+        afterListAdd: function(lobilist, list){
+            var $dueDateInput = list.$el.find('form [name=dueDate]');
+            $dueDateInput.datepicker();
+        }
     });
     // Event handling
     (function () {
@@ -65,11 +103,11 @@ $(function () {
                             msg: 'beforeListAdd'
                         });
                     },
-                    // afterListAdd: function () {
-                    //     Lobibox.notify('default', {
-                    //         msg: 'afterListAdd'
-                    //     });
-                    // },
+                    afterListAdd: function () {
+                        Lobibox.notify('default', {
+                            msg: 'afterListAdd'
+                        });
+                    },
                     beforeListRemove: function () {
                         Lobibox.notify('default', {
                             msg: 'beforeListRemove'
@@ -153,36 +191,36 @@ $(function () {
                         Lobibox.notify('default', {
                             msg: 'titleChange: Old title - "'+oldTitle+'". New title - "'+ newTitle + '"'
                         });
-                    }
-                    // lists: [
-                    //     {
-                    //         title: 'TODO',
-                    //         defaultStyle: 'lobilist-info',
-                    //         items: [
-                    //             {
-                    //                 title: 'Floor cool cinders',
-                    //                 description: 'Thunder fulfilled travellers folly, wading, lake.',
-                    //                 dueDate: '2015-01-31'
-                    //             },
-                    //             {
-                    //                 title: 'Periods pride',
-                    //                 description: 'Accepted was mollis',
-                    //                 done: true
-                    //             },
-                    //             {
-                    //                 title: 'Flags better burns pigeon',
-                    //                 description: 'Rowed cloven frolic thereby, vivamus pining gown intruding strangers prank ' +
-                    //                 'treacherously darkling.'
-                    //             },
-                    //             {
-                    //                 title: 'Accepted was mollis',
-                    //                 description: 'Rowed cloven frolic thereby, vivamus pining gown intruding strangers prank ' +
-                    //                 'treacherously darkling.',
-                    //                 dueDate: '2015-02-02'
-                    //             }
-                    //         ]
-                    //     }
-                    // ]
+                    },
+                    lists: [
+                        {
+                            title: 'TODO',
+                            defaultStyle: 'lobilist-info',
+                            items: [
+                                {
+                                    title: 'Floor cool cinders',
+                                    description: 'Thunder fulfilled travellers folly, wading, lake.',
+                                    dueDate: '2015-01-31'
+                                },
+                                {
+                                    title: 'Periods pride',
+                                    description: 'Accepted was mollis',
+                                    done: true
+                                },
+                                {
+                                    title: 'Flags better burns pigeon',
+                                    description: 'Rowed cloven frolic thereby, vivamus pining gown intruding strangers prank ' +
+                                    'treacherously darkling.'
+                                },
+                                {
+                                    title: 'Accepted was mollis',
+                                    description: 'Rowed cloven frolic thereby, vivamus pining gown intruding strangers prank ' +
+                                    'treacherously darkling.',
+                                    dueDate: '2015-02-02'
+                                }
+                            ]
+                        }
+                    ]
                 })
                 .data('lobiList');
         });
@@ -241,6 +279,34 @@ $(function () {
                         description: 'Hoary rattle exulting suspendisse elit paradises craft wistful. ' +
                         'Bayonets allures prefer traits wrongs flushed. Tent wily matched bold polite slab coinage ' +
                         'celerities gales beams.'
+                    }
+                ]
+            }
+        ]
+    });
+    // Disabled drag & drop
+    $('#todo-lists-demo-sorting').lobiList({
+        sortable: false,
+        lists: [
+            {
+                title: 'TODO',
+                defaultStyle: 'lobilist-info',
+                controls: ['edit', 'styleChange'],
+                items: [
+                    {
+                        title: 'Floor cool cinders',
+                        description: 'Thunder fulfilled travellers folly, wading, lake.',
+                        dueDate: '2015-01-31'
+                    }
+                ]
+            },
+            {
+                title: 'Controls disabled',
+                controls: false,
+                items: [
+                    {
+                        title: 'Composed trays',
+                        description: 'Hoary rattle exulting suspendisse elit paradises craft wistful. Bayonets allures prefer traits wrongs flushed. Tent wily matched bold polite slab coinage celerities gales beams.'
                     }
                 ]
             }

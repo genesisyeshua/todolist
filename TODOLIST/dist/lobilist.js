@@ -346,9 +346,9 @@ $(function () {
                     $actions.append(me._createFinishTitleEditing());
                     $actions.append(me._createCancelTitleEditing());
                 }
-                // if (me.$options.controls.indexOf('add') > -1) {
-                //     $actions.append(me._createAddNewButton());
-                // }
+                if (me.$options.controls.indexOf('add') > -1) {
+                    $actions.append(me._createAddNewButton());
+                }
                 if (me.$options.controls.indexOf('remove') > -1) {
                     $actions.append(me._createCloseButton());
                 }
@@ -587,25 +587,25 @@ $(function () {
 
         _createAddNewButton: function () {
 			var me = this;
-            // var $btn = $('<button>', {
-            //     'class': 'btn btn-default btn-xs',
-            //     html: '<i class="glyphicon glyphicon-plus"></i>'
-            // });
-            // $btn.click(function () {
-            //     var list = me.$lobiList.addList();
-            //     list.startTitleEditing();
-            // });
-            // return $btn;
+            var $btn = $('<button>', {
+                'class': 'btn btn-default btn-xs',
+                html: '<i class="glyphicon glyphicon-plus"></i>'
+            });
+            $btn.click(function () {
+                var list = me.$lobiList.addList();
+                list.startTitleEditing();
+            });
+            return $btn;
         },
 
         _createCloseButton: function () {
 			var me = this;
-            // var $btn = $('<button>', {
-            //     'class': 'btn btn-default btn-xs',
-            //     html: '<i class="glyphicon glyphicon-remove"></i>'
-            // });
-            // $btn.click(me._onRemoveListClick);
-            // return $btn;
+            var $btn = $('<button>', {
+                'class': 'btn btn-default btn-xs',
+                html: '<i class="glyphicon glyphicon-remove"></i>'
+            });
+            $btn.click(me._onRemoveListClick);
+            return $btn;
         },
 
         _onRemoveListClick: function () {

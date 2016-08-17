@@ -61,15 +61,17 @@ b. Open cmd and install by typing <b><i>pip install virtualenv</i></b>
 c. On cmd, navigate to the created folder and type <b><i>virtuanenv flask</i></b>
 d. activate virtual env:	<i>\flask\Scripts\activate.</i><br/>
 e. install extensions by typing the following in cmd:<br/>
-*flask\Scripts\pip install flask
-*flask\Scripts\pip install flask-login
-*flask\Scripts\pip install flask-openid
-*flask\Scripts\pip install flask-mail
-*flask\Scripts\pip install flask-wtf
-*flask\Scripts\pip install flask-babel
-*flask\Scripts\pip install guess_language
-*flask\Scripts\pip install flipflop
-*flask\Scripts\pip install coverage
+<ul>
+<li>flask\Scripts\pip install flask</li>
+<li>flask\Scripts\pip install flask-login</li>
+<li>flask\Scripts\pip install flask-openid</li>
+<li>flask\Scripts\pip install flask-mail</li>
+<li>flask\Scripts\pip install flask-wtf</li>
+<li>flask\Scripts\pip install flask-babel</li>
+<li>flask\Scripts\pip install guess_language</li>
+<li>flask\Scripts\pip install flipflop</li>
+<li>flask\Scripts\pip install coverage</li>
+</ul
 
 #####4.Mongodb version 3.0 or v.3.2
 Refer to the online documentation for the installation of mongodb to the link https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/

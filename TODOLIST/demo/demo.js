@@ -22,25 +22,8 @@ $(function () {
                     },
                     
                 ]
-            },
-            {
-                title: 'DOING',
-                items: [
-                    {
-                        title: 'Composed trays',
-                        description: 'Hoary rattle exulting suspendisse elit paradises craft wistful. Bayonets allures prefer traits wrongs flushed. Tent wily matched bold polite slab coinage celerities gales beams.'
-                    },
-                    {
-                        title: 'Chic leafy'
-                    },
-                    {
-                        title: 'Guessed interdum armies chirp writhes most',
-                        description: 'Came champlain live leopards twilight whenever warm read wish squirrel rock.',
-                        dueDate: '2015-02-04',
-                        done: true
-                    }
-                ]
             }
+            
         ]
     });
     //Custom datepicker

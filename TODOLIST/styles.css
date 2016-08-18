@@ -1,18 +1,14 @@
+
 .form-control {
 align-items: center;
 }
 .add_button {
-margin: 10px 0px 0px 80px;
+margin: 10px 0px 10px 0px;
 width: 80px;
 height: 40px;
-position: relative;
-float: center;
-}
-#main{
-float: center;
-position: relative;
-}
+align: center;
 
+}
 .checkbox {
 margin-top: 20px;
 }
@@ -20,21 +16,12 @@ margin-top: 20px;
 text-decoration: line-through;
 }
 h1 {
-font-family: 'Source Sans Pro', sans-serif;
-/*font-family: 'Quicksand', sans-serif;*/
-color: #ffffff;
+color: #e6ffff;
 float: center;
-font-size: 50px;
-position: relative;
-/*background-color: #47476b;*/
-margin-bottom: 0px;
-border-top-right-radius: 5px;
-border-top-left-radius: 5px;
 }
 body {
-background-color: #cccccc;
-font-family: 'Quicksand', sans-serif;
-font-size: 20px;
+background-color: #333333;
+font-family: 'Denk One', sans-serif;
 }
 .text_holder {
 display: block;
@@ -43,61 +30,19 @@ word-wrap: break-word;
 }
 #main {
 margin-top: 150px;
-background-color: #403f3f;
+background-color: #004d4d;
 border-radius: 5px;
 width: 50%;
-border: 5px solid #4073bf;
+border: 1px solid #545454;
 float: center;
 margin-right: auto;
 margin-left: auto;
 }
 #main_input_box{
-position: relative;;
 float: center;
 align-content: center;
-padding-left: 165px;
-/*background-color: #47476b;*/
-margin-bottom: 15px;
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
+padding-left: 50px;
 }
 #custom_textbox{
-position: relative;
 align: center;
-border: 2px dashed #D1C7AC;
-padding: 10px;
-float: center;
-width: 300px;
-}
-.text_holder{
-/*border: 2px dashed #D1C7AC;*/
-padding: 10px;
-color: #FFFFFF;
-}
-.list-group-item{
-border: 3px solid #FFFFFF;
-padding: 2px;
-background-color: transparent;
-border-radius: 15px;
-margin: 4px;
-}
-.completed_item{
-border: 3px solid #FFFFFF;
-padding: 2px;
-background-color: transparent;
-border-radius: 15px;
-margin: 4px;
-}
-.delete{
-background-color: #ff5050;
-border: 5px solid #ff5050;
-}
-.edit{
-background-color: #40bf40;
-border: 5px solid #40bf40;
-}
-
-.add_button{
-background-color: #4073bf;
-border: 5px solid #4073bf;
 }

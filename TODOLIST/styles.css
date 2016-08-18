@@ -36,7 +36,8 @@ border-top-right-radius: 5px;
 border-top-left-radius: 5px;
 }
 body {
-background-color: #cccccc;
+	background-image:url(css/yckrdpjdi.png);
+/*background-color: #cccccc;*/
 font-family: 'Quicksand', sans-serif;
 font-size: 20px;
 }
@@ -79,7 +80,8 @@ border-radius: 5px;
 margin: 4px;
 }
 .edit_input_box{
-margin-left:5px;	
+margin-left:5px;
+color:#000000;	
 }
 .completed_item{
 border: 3px solid #FFFFFF;

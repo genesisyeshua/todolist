@@ -300,8 +300,8 @@ $(function () {
             $footer.addClass('hide');
             $form[0].id.value = $item.attr('data-id');
             $form[0].title.value = $item.find('.lobilist-item-title').html();
-            $form[0].description.value = $item.find('.lobilist-item-description').html() || '';
-            $form[0].dueDate.value = $item.find('.lobilist-item-duedate').html() || '';
+            // $form[0].description.value = $item.find('.lobilist-item-description').html() || '';
+            // $form[0].dueDate.value = $item.find('.lobilist-item-duedate').html() || '';
             return me;
         },
 
@@ -390,25 +390,27 @@ $(function () {
                     'type': 'text',
                     name: 'title',
                     'class': 'form-control',
-                    placeholder: 'TODO title'
+                    placeholder: 'TO-DO item'
                 })
-            ).appendTo($form);
-            $('<div class="form-group">').append(
-                $('<textarea>', {
-                    rows: '2',
-                    name: 'description',
-                    'class': 'form-control',
-                    'placeholder': 'TODO description'
-                })
-            ).appendTo($form);
-            $('<div class="form-group">').append(
-                $('<input>', {
-                    'type': 'text',
-                    name: 'dueDate',
-                    'class': 'form-control',
-                    placeholder: 'Due Date'
-                })
-            ).appendTo($form);
+            )
+            // ).appendTo($form);
+            // $('<div class="form-group">').append(
+            //     $('<textarea>', {
+            //         rows: '2',
+            //         name: 'description',
+            //         'class': 'form-control',
+            //         'placeholder': 'TODO description'
+            //     })
+            // ).appendTo($form);
+            // $('<div class="form-group">').append(
+            //     $('<input>', {
+            //         'type': 'text',
+            //         name: 'dueDate',
+            //         'class': 'form-control',
+            //         placeholder: 'Due Date'
+            //     })
+            // )
+            .appendTo($form);
             var $ft = $('<div class="lobilist-form-footer">');
             $('<button>', {
                 'class': 'btn btn-primary btn-sm btn-add-todo',

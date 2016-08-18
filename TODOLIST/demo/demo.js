@@ -12,11 +12,13 @@ $(function () {
     $('#todo-lists-basic-demo').lobiList({
         lists: [
             {
-                title: 'TO-DO LIST',
+                title: 'TODO',
                 defaultStyle: 'lobilist-info',
                 items: [
                     {
-                        title: 'Sample To-do item',
+                        title: 'Sample Todo List',
+                        description: 'Sample Description',
+                        dueDate: '2015-01-31'
                     },
                     
                 ]

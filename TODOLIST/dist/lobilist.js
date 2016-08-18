@@ -574,15 +574,15 @@ $(function () {
 
         _createEditTitleButton: function () {
 			var me = this;
-            var $btn = $('<button>', {
-                'class': 'btn btn-default btn-xs',
-                html: '<i class="glyphicon glyphicon-edit"></i>'
-            });
-            $btn.click(function () {
-                me.startTitleEditing();
-            });
+            // var $btn = $('<button>', {
+            //     'class': 'btn btn-default btn-xs',
+            //     html: '<i class="glyphicon glyphicon-edit"></i>'
+            // });
+            // $btn.click(function () {
+            //     me.startTitleEditing();
+            // });
 
-            return $btn;
+            // return $btn;
         },
 
         _createAddNewButton: function () {

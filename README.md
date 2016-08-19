@@ -1,4 +1,4 @@
-#**TO-DO-LIST: A Web Application Using Python** :+1:
+﻿#**TO-DO-LIST: A Web Application Using Python** :+1:
 
 ##
 <b>Project Status:<i>Not Yet Completed</i></b>
@@ -90,7 +90,7 @@ Refer to the online documentation for the installation of mongodb to the link ht
 
 ####Contributors
 * Caburnay, John david [jdcaburnay (git) , @johnca (slack)]- specific task includes developing and refining GUI
-* Gonzales, Michael [ikels24 (git) , @michaelgo (slack)] - 
+* Gonzales, Michael [ikels24 (git) , @michaelgo (slack)] - specific task including the back-end of the web app and integrating all the functions 
 * Galinato, Julie Anne [julieannegalinato (git) , @julieannemg (slack) -
 * Lim, Genesis [genesisyeshua (git) , @genesisl (slack)] - specific task include developing and refining GUI
 * Manalili, Daniel James [dmanalili9123 (git) , @danielma (slack)] - 
